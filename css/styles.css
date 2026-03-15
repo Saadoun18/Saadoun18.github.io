@@ -11733,3 +11733,10 @@ html {
     left: -2vw;
   }
 }
+
+/* هذا الكود سيعمل فقط عندما تكتشف الصفحة أن اللغة هي العربية */
+html[lang="ar"], 
+html[lang="ar"] body, 
+html[lang="ar"] * {
+    font-family: 'Tajawal', 'Cairo', sans-serif !important;
+}
