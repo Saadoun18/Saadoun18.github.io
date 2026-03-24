@@ -11740,3 +11740,7 @@ html[lang="ar"] body,
 html[lang="ar"] * {
     font-family: 'Tajawal', 'Cairo', sans-serif !important;
 }
+
+.project-radius {
+  border-radius: 50px;
+}
