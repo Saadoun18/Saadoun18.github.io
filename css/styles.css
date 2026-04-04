@@ -11744,3 +11744,66 @@ html[lang="ar"] * {
 .project-radius {
   border-radius: 50px;
 }
+
+.contact-form {
+  max-width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* The container for each field */
+.input-group {
+  position: relative;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Highlight the active field (like the purple one in your image) */
+.input-group:focus-within {
+  border-color: #a5aaff; /* Light purple/blue border */
+  box-shadow: 0 0 0 4px #eef0ff; /* Soft outer glow */
+}
+
+/* The persistent label */
+.input-group label {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 13px;
+  color: #888; /* Grey color for the label */
+  pointer-events: none; /* Allows clicking "through" the label to the input */
+}
+
+/* The actual input fields */
+.input-group input, 
+.input-group textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 28px 15px 10px 15px; /* Heavy top padding to make room for label */
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #2e37ff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #1a22cc;
+}
